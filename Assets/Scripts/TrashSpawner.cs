@@ -5,7 +5,7 @@ using UnityEngine;
 public class TrashSpawner : MonoBehaviour
 {
     [SerializeField]GameObject Trash;
-    float movetimerMax = 2;
+    float movetimerMax = 4;
     float movetimer;
     float maxXpos = 21;
     float minXpos = -21;
@@ -22,7 +22,7 @@ public class TrashSpawner : MonoBehaviour
         if (movetimer >= movetimerMax)
         {
             movetimer = 0;
-            
+            Instantiate(Trash, this.transform.position, this.transform.rotation);
             transform.position = new Vector3(Random.Range(minXpos, maxXpos), 12, 0);
         }
     }
