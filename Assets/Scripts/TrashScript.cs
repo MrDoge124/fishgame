@@ -12,11 +12,11 @@ public class TrashScript : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         gm = FindObjectOfType<GameManager>();
-        print(gm.name);
+        //print(gm.name);
     }
     private void OnCollisionEnter(Collision collision)
     {
-        print(collision.gameObject.name);
+        //print(collision.gameObject.name);
         if (collision.gameObject.layer == LayerMask.NameToLayer("Ground")) 
         {
             gm.SubtractLives(1);
