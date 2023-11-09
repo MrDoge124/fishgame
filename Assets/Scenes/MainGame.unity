@@ -1988,11 +1988,9 @@ SceneRoots:
   - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 1288233760}
-  - {fileID: 6852844920211959744}
-  - {fileID: 1558091129}
-  - {fileID: 1584776432}
-  - {fileID: 1808259155}
-  - {fileID: 732528907}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 857265138}
   - {fileID: 454602045}
   - {fileID: 564971866}
