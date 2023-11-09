@@ -1376,7 +1376,7 @@ Rigidbody:
   m_GameObject: {fileID: 1288233759}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 0.15
+  m_Drag: 0.2
   m_AngularDrag: 0.1
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -1575,7 +1575,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1584776432
 Transform:
@@ -1988,9 +1988,6 @@ SceneRoots:
   - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 1288233760}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 857265138}
   - {fileID: 454602045}
   - {fileID: 564971866}

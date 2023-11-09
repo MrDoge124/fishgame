@@ -15,7 +15,11 @@ public class GameManager : MonoBehaviour
         Lives = 3;
         Score = 0;
     }
-
+    public void EndGame() 
+    {
+        Time.timeScale = 0;
+    }
+    #region score
     public void AddScore(int scoretoadd)
     {
         Score += scoretoadd;
@@ -27,10 +31,24 @@ public class GameManager : MonoBehaviour
         Score += 1;
         scoreText.text = Score.ToString();
     }
-
-    public void ChangeLives(int livesamount)
+    #endregion
+    #region lives
+    public void AddLives(int livesamount)
     {
         Lives += livesamount;
-        livesText.text = Lives.ToString(); ;
+        livesText.text = Lives.ToString();
     }
+    public void SubtractLives(int livesamount)
+    {
+        if (Lives != 0)
+        {
+            Lives -= livesamount;
+            livesText.text = Lives.ToString();
+            if (Lives == 0)
+            {
+                EndGame(); 
+            }
+        }
+    }
+    #endregion
 }
