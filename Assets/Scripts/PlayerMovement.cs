@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]BoxCollider trashBox;
     [SerializeField] GameObject playerModel;
     [SerializeField]GameManager gm;
-    [SerializeField]float playerSpeed = 7f, playerBrakes = 1.3f, bounceForce = 36f;
+    [SerializeField]float playerSpeedX = 7f,playerSpeedY = 4f, playerBrakes = 1.3f, bounceForce = 36f;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,13 +29,21 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.D))
         {
-            rb.AddForce(playerSpeed, 0, 0);
+            rb.AddForce(playerSpeedX, 0, 0);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            rb.AddForce(-playerSpeed, 0, 0);
+            rb.AddForce(-playerSpeedX, 0, 0);
+        }
+        if (Input.GetKey(KeyCode.W))
+        {
+            rb.AddForce(0, playerSpeedY, 0);
         }
         if (Input.GetKey(KeyCode.S))
+        {
+            rb.AddForce(0, -playerSpeedY, 0);
+        }
+        if (Input.GetKey(KeyCode.Space))
         {
             rb.velocity = rb.velocity / playerBrakes;
         }

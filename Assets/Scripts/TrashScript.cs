@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class TrashScript : MonoBehaviour
 {
-    MeshFilter mesh;
     GameManager gm;
     Rigidbody rb;
     float wallForce = 20;
@@ -12,13 +11,12 @@ public class TrashScript : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        mesh = GetComponent<MeshFilter>();
         gm = FindObjectOfType<GameManager>();
-        print(gm.name);
+        //print(gm.name);
     }
     private void OnCollisionEnter(Collision collision)
     {
-        print(collision.gameObject.name);
+        //print(collision.gameObject.name);
         if (collision.gameObject.layer == LayerMask.NameToLayer("Ground")) 
         {
             gm.SubtractLives(1);

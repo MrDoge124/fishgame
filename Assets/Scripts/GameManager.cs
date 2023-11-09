@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    int Score;
-    int Lives;
+    public float Score;
+    public int Lives;
     [SerializeField]TextMeshProUGUI scoreText;
     [SerializeField]TextMeshProUGUI livesText;
     public bool gameOver;
