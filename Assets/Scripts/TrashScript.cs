@@ -10,12 +10,4 @@ public class TrashScript : MonoBehaviour
     {
         mesh = GetComponent<MeshFilter>();
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            
-        }
-    }
 }

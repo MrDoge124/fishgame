@@ -16,15 +16,18 @@ public class GameManager : MonoBehaviour
     public void AddScore(int scoretoadd)
     {
         Score += scoretoadd;
+        print(Score);
     }
 
     public void AddScore()
     {
         Score += 1;
+        print(Score);
     }
 
     public void ChangeLives(int livesamount)
     {
         Lives += livesamount;
+        print(Lives);
     }
 }
