@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     int Score;
     int Lives;
+    [SerializeField]TextMeshProUGUI scoreText;
+    [SerializeField]TextMeshProUGUI livesText;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,18 +19,18 @@ public class GameManager : MonoBehaviour
     public void AddScore(int scoretoadd)
     {
         Score += scoretoadd;
-        print(Score);
+        scoreText.text = Score.ToString();
     }
 
     public void AddScore()
     {
         Score += 1;
-        print(Score);
+        scoreText.text = Score.ToString();
     }
 
     public void ChangeLives(int livesamount)
     {
         Lives += livesamount;
-        print(Lives);
+        livesText.text = Lives.ToString(); ;
     }
 }
