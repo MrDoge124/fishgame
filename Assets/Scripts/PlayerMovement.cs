@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]BoxCollider trashBox;
     [SerializeField] GameObject playerModel;
     [SerializeField]GameManager gm;
+    [SerializeField]float playerSpeed = 7f, playerBrakes = 1.3f, bounceForce = 36f;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,15 +29,15 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.D))
         {
-            rb.AddForce(5, 0, 0);
+            rb.AddForce(playerSpeed, 0, 0);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            rb.AddForce(-5, 0, 0);
+            rb.AddForce(-playerSpeed, 0, 0);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            rb.velocity = rb.velocity / 1.5f;
+            rb.velocity = rb.velocity / playerBrakes;
         }
     }
     private void FlipModel(bool flip)
@@ -65,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (collision.gameObject.GetComponent<Rigidbody>())
             {
-                collision.gameObject.GetComponent<Rigidbody>().AddForce(0,35,0);
+                collision.gameObject.GetComponent<Rigidbody>().AddForce(0,bounceForce,0);
             }
         }
     }

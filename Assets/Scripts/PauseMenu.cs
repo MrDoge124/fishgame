@@ -5,24 +5,27 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
-
+    [SerializeField] GameManager gm;
     public GameObject pauseMenuUI;
     void Update()
     {
+        if (!gm.gameOver)
+        {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (GameIsPaused)
-            {
-                Resume();
-            }
-            else
-            {
-                Pause();
+                if (GameIsPaused)
+                {
+                    Resume();
+                }
+                else
+                {
+                    Pause();
+                }
             }
         }
     }
 
-    void Resume()
+    public void Resume()
     {
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;

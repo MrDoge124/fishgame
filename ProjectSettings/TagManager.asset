@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Manager
   - Trash
+  - WallR
+  - WallL
   layers:
   - Default
   - TransparentFX
