@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class TrashScript : MonoBehaviour
 {
-    MeshFilter mesh;
     GameManager gm;
     Rigidbody rb;
     float wallForce = 20;
@@ -12,7 +11,6 @@ public class TrashScript : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        mesh = GetComponent<MeshFilter>();
         gm = FindObjectOfType<GameManager>();
         print(gm.name);
     }
