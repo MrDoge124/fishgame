@@ -59,4 +59,14 @@ public class PlayerMovement : MonoBehaviour
             gm.AddScore();
         }
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Trash"))
+        {
+            if (collision.gameObject.GetComponent<Rigidbody>())
+            {
+                collision.gameObject.GetComponent<Rigidbody>().AddForce(0,35,0);
+            }
+        }
+    }
 }
