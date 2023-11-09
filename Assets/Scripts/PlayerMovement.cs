@@ -28,11 +28,11 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.D))
         {
-            rb.AddForce(4, 0, 0);
+            rb.AddForce(5, 0, 0);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            rb.AddForce(-4, 0, 0);
+            rb.AddForce(-5, 0, 0);
         }
         if (Input.GetKey(KeyCode.S))
         {
