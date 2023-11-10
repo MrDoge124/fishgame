@@ -8,7 +8,7 @@ public class PowerUpRemoveLives : PowerUpBase
     {
         base.PowerUpCollect(gm);
         gmlocal = gm;
-        gmlocal.AddLives(-1);
+        gmlocal.SubtractLives(1);
         Destroy(this.gameObject);
     }
     public override void OnTriggerEnter(Collider other)

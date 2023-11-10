@@ -48,6 +48,7 @@ public class PowerUpBase : MonoBehaviour
     public virtual void PowerUpCollect(GameManager gmlocal)//for point adding
     {
         Source.PlayOneShot(Clip);
+        print("Play sound " + Clip.name);
         this.transform.position = new Vector3(12, 400, 0);
     }
     public virtual void PowerUpStop(GameObject player)
