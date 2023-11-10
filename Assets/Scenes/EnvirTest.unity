@@ -432,6 +432,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: --Environment--
       objectReference: {fileID: 0}
+    - target: {fileID: 6787211048164530939, guid: d32ac9384c5184a458b1cf81e2fc71c0,
+        type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[0]
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 8347846824368115677, guid: d32ac9384c5184a458b1cf81e2fc71c0,
         type: 3}
       propertyPath: m_LocalPosition.x
