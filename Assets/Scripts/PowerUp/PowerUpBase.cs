@@ -33,11 +33,11 @@ public class PowerUpBase : MonoBehaviour
     {
         print("Power up get. Will last " + maxtime + " seconds.");
         poweredUp = true;
-        this.transform.position = new Vector3 (12, 20, 0);
+        this.transform.position = new Vector3 (12, 400, 0);
     }
     public virtual void PowerUpStop(GameObject player)
     {
-        print("power up stop. Lasted " + duration + " seconds.");
+        print("power up stop. Lasted " + maxtime + " seconds.");
         poweredUp = false;
         Destroy(this.gameObject);
     }

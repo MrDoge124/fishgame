@@ -52,11 +52,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!flip)
         {
-            playerModel.transform.localScale = new Vector3(playerModel.transform.localScale.x, playerModel.transform.localScale.y, 111.5997f);
+            playerModel.transform.localScale = new Vector3(playerModel.transform.localScale.x, 111.5997f, playerModel.transform.localScale.z);
         }
         if (flip)
         {
-            playerModel.transform.localScale = new Vector3(playerModel.transform.localScale.x, playerModel.transform.localScale.y, -111.5997f);
+            playerModel.transform.localScale = new Vector3(playerModel.transform.localScale.x, -111.5997f, playerModel.transform.localScale.z);
         }
     }
 
