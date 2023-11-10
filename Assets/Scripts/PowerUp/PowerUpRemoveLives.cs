@@ -13,6 +13,9 @@ public class PowerUpRemoveLives : PowerUpBase
     }
     public override void OnTriggerEnter(Collider other)
     {
-        PowerUpCollect(gm);
+        if (other.gameObject.CompareTag("Player"))
+        {
+            PowerUpCollect(gm);
+        }
     }
 }

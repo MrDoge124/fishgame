@@ -41,19 +41,19 @@ public class PowerUpBase : MonoBehaviour
     public virtual void PowerUpGet(GameObject player)
     {
         Source.PlayOneShot(Clip);
-        print("Power up get. Will last " + maxtime + " seconds.");
+        //print("Power up get. Will last " + maxtime + " seconds.");
         poweredUp = true;
         this.transform.position = new Vector3 (12, 400, 0);
     }
     public virtual void PowerUpCollect(GameManager gmlocal)//for point adding
     {
         Source.PlayOneShot(Clip);
-        print("Play sound " + Clip.name);
+        //print("Play sound " + Clip.name);
         this.transform.position = new Vector3(12, 400, 0);
     }
     public virtual void PowerUpStop(GameObject player)
     {
-        print("power up stop. Lasted " + maxtime + " seconds.");
+        //print("power up stop. Lasted " + maxtime + " seconds.");
         poweredUp = false;
         Destroy(this.gameObject);
     }
