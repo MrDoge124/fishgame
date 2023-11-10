@@ -6,7 +6,7 @@ public class PowerUpBase : MonoBehaviour
 {
     protected GameObject playerObj;
     protected float duration;
-    protected float maxtime = 8;
+    protected float maxtime = 5;
     protected bool poweredUp;
     protected AudioSource Source;
     protected AudioClip Clip;
