@@ -505,6 +505,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: --Particles--
       objectReference: {fileID: 0}
+    - target: {fileID: 3735590288645344675, guid: e25e81cf82432b947b5a2fa8e8ce323c,
+        type: 3}
+      propertyPath: prewarm
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794337556470960978, guid: e25e81cf82432b947b5a2fa8e8ce323c,
+        type: 3}
+      propertyPath: prewarm
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6327413751902815412, guid: e25e81cf82432b947b5a2fa8e8ce323c,
+        type: 3}
+      propertyPath: prewarm
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8444396467646869202, guid: e25e81cf82432b947b5a2fa8e8ce323c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -19.409
+      objectReference: {fileID: 0}
     - target: {fileID: 8743038665563564991, guid: e25e81cf82432b947b5a2fa8e8ce323c,
         type: 3}
       propertyPath: m_LocalPosition.x
