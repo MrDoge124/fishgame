@@ -9,7 +9,7 @@ public class PowerUpAddLives : PowerUpBase
         base.PowerUpCollect(gm);
         gmlocal = gm;
         gmlocal.AddLives(1);
-        Destroy(this.gameObject);
+        Destroy(this.gameObject, 1f);
     }
     public override void OnTriggerEnter(Collider other)
     {

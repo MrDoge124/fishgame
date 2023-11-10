@@ -9,7 +9,7 @@ public class PowerUpManyPoints : PowerUpBase
         base.PowerUpCollect(gm);
         gmlocal = gm;
         gmlocal.AddScore(5);
-        Destroy(this.gameObject);
+        Destroy(this.gameObject, 1f);
     }
     public override void OnTriggerEnter(Collider other)
     {
