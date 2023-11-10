@@ -741,7 +741,7 @@ PrefabInstance:
     - target: {fileID: 6787211048164530939, guid: d32ac9384c5184a458b1cf81e2fc71c0,
         type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[0]
-      value: 0
+      value: 76.1
       objectReference: {fileID: 0}
     - target: {fileID: 7042158612210221640, guid: d32ac9384c5184a458b1cf81e2fc71c0,
         type: 3}
@@ -827,6 +827,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8950907514827923824, guid: d32ac9384c5184a458b1cf81e2fc71c0,
+        type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[0]
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
