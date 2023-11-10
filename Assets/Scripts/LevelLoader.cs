@@ -30,4 +30,16 @@ public class LevelLoader : MonoBehaviour
     {
         SceneManager.LoadScene("MainGame");
     }
+
+    public void FreezeGame(int freezed)
+    {
+        if (freezed == 1)
+        {
+            Time.timeScale = 0f;
+        }
+        else 
+        {
+            Time.timeScale = 1f;
+        }
+    }
 }
