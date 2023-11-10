@@ -598,6 +598,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 2560458873295859632, guid: 5b31e1fd648d1a34ea78145e50f1ba7c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.266
+      objectReference: {fileID: 0}
     - target: {fileID: 5330971304992903157, guid: 5b31e1fd648d1a34ea78145e50f1ba7c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -809,7 +814,7 @@ PrefabInstance:
     - target: {fileID: 6787211048164530939, guid: d32ac9384c5184a458b1cf81e2fc71c0,
         type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[0]
-      value: 76.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7042158612210221640, guid: d32ac9384c5184a458b1cf81e2fc71c0,
         type: 3}
