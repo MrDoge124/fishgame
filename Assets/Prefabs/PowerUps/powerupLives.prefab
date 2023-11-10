@@ -15,8 +15,9 @@ GameObject:
   - component: {fileID: 4484019457641402368}
   - component: {fileID: 1304439453166125712}
   - component: {fileID: 4445432177873305214}
+  - component: {fileID: -4680395794218441961}
   m_Layer: 0
-  m_Name: powerupSpeed
+  m_Name: powerupLives
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a1da2110d78b72445bce0b616d6b7650, type: 2}
+  - {fileID: 2100000, guid: ff4eb7c07944a7849802c54709888626, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -244,3 +245,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-4680395794218441961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9017702185615532946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b84731b83e95549a22c659aebe8daf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
