@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PowerUpSpeed : PowerUpBase
 {
-    float speedMult = 1.2f;
+    float speedMult = 1.5f;
     public override void PowerUpGet(GameObject player)
     {
         base.PowerUpGet(player);
