@@ -8,7 +8,14 @@ public class PowerUpBase : MonoBehaviour
     protected float duration;
     protected float maxtime = 8;
     protected bool poweredUp;
+    protected AudioSource Source;
+    protected AudioClip Clip;
     // Start is called before the first frame update
+    private void Start()
+    {
+        Source = GetComponent<AudioSource>();
+        Clip = GetComponent<AudioSource>().clip;
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
@@ -31,6 +38,7 @@ public class PowerUpBase : MonoBehaviour
     }
     public virtual void PowerUpGet(GameObject player)
     {
+        Source.PlayOneShot(Clip);
         print("Power up get. Will last " + maxtime + " seconds.");
         poweredUp = true;
         this.transform.position = new Vector3 (12, 400, 0);
