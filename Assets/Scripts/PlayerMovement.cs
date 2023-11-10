@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]BoxCollider trashBox;
     [SerializeField] GameObject playerModel;
     [SerializeField]GameManager gm;
-    [SerializeField]float playerSpeedX = 7f,playerSpeedY = 4f, playerBrakes = 1.3f, bounceForce = 36f;
+    public float playerSpeedX = 7f,playerSpeedY = 4f, playerBrakes = 1.3f, bounceForce = 36f;
     // Start is called before the first frame update
     void Start()
     {

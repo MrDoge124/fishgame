@@ -8,6 +8,7 @@ TagManager:
   - Trash
   - WallR
   - WallL
+  - PowerUp
   layers:
   - Default
   - TransparentFX

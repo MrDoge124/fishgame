@@ -7,48 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Gem
-    second: {fileID: 2100000, guid: ff4eb7c07944a7849802c54709888626, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Gem.001
-    second: {fileID: 2100000, guid: 757350158573c0d44b72c4fa6ebf51cb, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Gem.002
-    second: {fileID: 2100000, guid: 17832917465998d4b9f8082594ffe041, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Paper
-    second: {fileID: 2100000, guid: 80f6c421d17eab04fa9f05eb5078b5a2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Shadow
-    second: {fileID: 2100000, guid: 2da33228964de1e4a9f96ddfd5d2fc9d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Shadow2
-    second: {fileID: 2100000, guid: b43217af537668d4696485652c5febe3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: bone
-    second: {fileID: 2100000, guid: 008b4dc700b1369458d081992626b2b6, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: chest
     second: {fileID: 2100000, guid: a5726eaa6b6075d47bd4a1de649075cd, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: gold
-    second: {fileID: 2100000, guid: 246e1008c384aff4a99ffa65f073fc50, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -48,7 +48,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd6c1050c5649c1489de5eacc07e59a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trash: {fileID: 4881154303026086198, guid: f0443a7338923cd488c4564f694c3d06, type: 3}
+  Trash:
+  - {fileID: 4881154303026086198, guid: f0443a7338923cd488c4564f694c3d06, type: 3}
+  - {fileID: 4881154303026086198, guid: b469df7eab336124688db6d5197b8fa2, type: 3}
+  - {fileID: 8442019500076730915, guid: c22e9fe227e18c6448debd9976dce438, type: 3}
+  movetimerMax: 5
 --- !u!114 &2160232266690171680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,6 +65,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ad16ceb18f9bed409328d518d57bd1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Score: 0
+  Lives: 0
   scoreText: {fileID: 0}
   livesText: {fileID: 0}
   gameOver: 0
